@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    background-color: rgb(241, 159, 159);
+    display: flex;
+    justify-content: space-around;
+    padding: 9px;
+    position: fixed;
+    background-color: yellow;
+    color: red;
+    z-index: 2;
+}
+
+input{
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+}
+
+p{
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.cart{
+    width: 240px;
+    height: 380px;
+    margin: 3px;
+    background-color: rgb(121, 185, 245);
+    position: relative;
+    box-shadow: 0px 0px 20px white ;
+}
+
+
+.cartLIstCart{
+    width: 120px;
+    margin: 3px;
+    background-color: rgb(121, 185, 245);
+}
+
+img{
+    width: 239px;
+}
+
+
+.img{
+    width: 50px;
+    
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 56px;
+    
+}
+
+
+.cartList{
+    width: 40px;
+    height: 40px;
+    background-image: url(./add-to-basket.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+span{
+    padding: 4px;
+    color: red;
+    border-radius: 20px;
+    position: absolute;
+    right: 10px;
+    bottom: 0;
+    font-size: 20px;
+}
+
+.icon{
+    width: 20px;
+    height: 20px;
+    background-image: url(./love.png);
+    background-position: center;
+    background-size: cover;
+    padding: 10px;
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+}
+
+.icon1{
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+    background-image: url(./heart.png)
+}
+
+.main{
+    opacity: 0;
+    text-align: center;
+}
+
+body{
+    position: relative;
+    background-color: rgb(82, 141, 209);
+}
+
+.main1{
+    background-color: rgb(136, 211, 230);
+    z-index: 2;
+    position: fixed;
+    top: 50px;
+    right:-500px;
+    transform: translateX(-500px);
+    transition: .3s;
+    opacity: 1;
+    display: block;
+}
+
+
+td{
+    text-align: center;
+    padding: 10px;
+}
+th{
+    padding: 10px;
+}
+
+button{
+    padding: 5px;
+}
+
+b{
+    color: red;
+}
