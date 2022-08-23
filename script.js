@@ -46,7 +46,6 @@ data.forEach(e=>{
     input.addEventListener('input',(event)=>{
     	let searchInput = input.value;
             if(searchInput){
-                console.log(name);
                 data.map(e=>{
                     if(!name.innerText.toLowerCase().includes(searchInput.toLowerCase())){
                         name.parentElement.style.display = 'none'
@@ -79,7 +78,7 @@ data.forEach(e=>{
         tdName.innerText = e.name;
         tdPrice.innerText = e.price;
         count.innerText = c
-        let priceElem = e.price.slice(1).split(' ').join('')
+        let priceElem = +e.price.slice(1).split(' ').join('')
         amountArr.push(priceElem)
         
         sum = amountArr.reduce((a,b)=>+a+ +b)
@@ -90,7 +89,7 @@ data.forEach(e=>{
         addButton.addEventListener('click',()=>{
             count.innerText = ++c
             amountArr.push(priceElem)
-            sum+= +priceElem
+            sum+= priceElem
             console.log(amountArr);
 
             amount.innerText = sum
@@ -103,7 +102,6 @@ data.forEach(e=>{
             sum-=priceElem
             amountArr.splice(amountArr.indexOf(priceElem),1)
             amount.innerText = sum
-            console.log(amountArr);
             if(!c){
                 minusButton.parentElement.parentElement.style.display = 'none'
                 counter--
